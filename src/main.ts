@@ -41,7 +41,7 @@ function user_run_application_template() {
       </div>
     </div>
     <div id="allcontent" class="allcontent">
-      <h3 style="font-size: 1.17em; font-family: CG-Bold; color: var(--theme_text_color); text-shadow: var(--theme_text_shadow3);">Привет из Шаблон в TS!</h3>
+      <h3 style="font-size: 1.17em; font-family: CG-Bold; color: var(--theme_text_color); text-shadow: var(--theme_text_shadow3);">Привет из Шаблон приложения в TS!</h3>
       <p style="color: var(--theme_text_color); text-shadow: var(--theme_text_shadow3);">Собрано с {{COMPILER_VER}}</p>
     </div>
   `;

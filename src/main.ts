@@ -41,8 +41,8 @@ function user_run_application_template() {
       </div>
     </div>
     <div id="allcontent" class="allcontent">
-      <h3>Привет из Шаблон приложения!</h3>
-      <p>Это минималистичное приложение для ColdOS</p>
+      <h3 сlass="text_ui" style="font-size: 1.17em; font-family: CG-Bold;">Привет из Шаблон в TS!</h3>
+      <p>Собрано с {{COMPILER_VER}}</p>
     </div>
   `;
 

@@ -1,5 +1,6 @@
 {
-  "name": "template",
+  "id": "template",
+  "name": "Шаблон",
   "version": "1.0.0",
   "description": "Пример приложения",
   "author": "Template",

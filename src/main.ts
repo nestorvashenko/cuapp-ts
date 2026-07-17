@@ -2,7 +2,11 @@ function user_run_application_template() {
   const id_app = "template";
   const height = "600";
   const width = "800";
+  const actiontextname = "Шаблон";
+  const classdock = "system";
+  const tooltip_app = "Шаблон приложения";
   const icon_app = `/coldos/osdata/Applications/User/${id_app}/${id_app}${ui_themeicons}.png`;
+  const addappindock = true;
 
   if (document.getElementById(id_app)) {
     Window_focus(id_app);
@@ -19,14 +23,17 @@ function user_run_application_template() {
     minHeight: 300,
     maxHeight: 800,
     icon: icon_app,
-    tooltip: "tapok",
-    actiontext: "tapok"
+    tooltip: tooltip_app,
+    actiontext: actiontextname
   };
+
+  const indicator = true;
+  const timeapp_data = 'application_id_' + Date.now() + '_';
 
   const htmlcode = `
     <div class="titledrag" style="height: 60px; width: calc(100% - 160px); position: absolute; left: 50px; user-select: none; z-index: 200;" ondblclick="Window_maximize('${id_app}')" onmousedown="move.window_systemos_api('.window', '${id_app}')"></div>
     <div id="titlebar" style="display: flex; gap: 10px; margin-top: 17px; margin-left: 17px;">
-      <div class="text_ui" style="font-size: 20px; font-family: CG-Bold;">tapok</div>
+      <div class="text_ui" style="font-size: 20px; font-family: CG-Bold;">Шаблон приложения</div>
       <div style="position: absolute; right: 21px; top: 21px;">
         <button class="minimize" tip="Свернуть" onclick="Window_minimize('${id_app}'); clicksound()"></button>
         <button class="maximize" tip="Развернуть" onclick="Window_maximize('${id_app}'); clicksound()"></button>
@@ -34,20 +41,16 @@ function user_run_application_template() {
       </div>
     </div>
     <div id="allcontent" class="allcontent">
-      <h3>Привет из tapok!</h3>
-      <p>Это твое минималистичное приложение ColdOS</p>
+      <h3>Привет из Шаблон приложения!</h3>
+      <p>Это минималистичное приложение для ColdOS</p>
     </div>
   `;
 
-  const indicator = true;
-  const timeapp_data = 'application_id_' + Date.now() + '_';
-
   const jswin = `
-    // здесь может быть дополнительный JS код
-    console.log('Приложение tapok загружено');
+    console.log('Приложение Шаблон приложения загружено');
   `;
 
-  Window_add(htmlcode, id_app, height, width, indicator, config, true, "user", jswin);
+  Window_add(htmlcode, id_app, height, width, indicator, config, addappindock, classdock, jswin);
 
   setTimeout(() => {
     if (width < 400) {

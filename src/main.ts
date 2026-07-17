@@ -31,7 +31,7 @@ function user_run_application_template() {
   const timeapp_data = 'application_id_' + Date.now() + '_';
 
   const htmlcode = `
-    <div class="titledrag" style="height: 60px; width: calc(100% - 160px); position: absolute; left: 50px; user-select: none; z-index: 200;" ondblclick="Window_maximize('${id_app}')" onmousedown="move.window_systemos_api('.window', '${id_app}')"></div>
+    <div class="titledrag" style="height: 60px; width: calc(100% - 130px); position: absolute; user-select: none; z-index: 200;" ondblclick="Window_maximize('${id_app}')" onmousedown="move.window_systemos_api('.window', '${id_app}')"></div>
     <div id="titlebar" style="display: flex; gap: 10px; margin-top: 17px; margin-left: 17px;">
       <div class="text_ui" style="font-size: 20px; font-family: CG-Bold;">Шаблон приложения</div>
       <div style="position: absolute; right: 21px; top: 21px;">
@@ -41,8 +41,8 @@ function user_run_application_template() {
       </div>
     </div>
     <div id="allcontent" class="allcontent">
-      <h3 сlass="text_ui" style="font-size: 1.17em; font-family: CG-Bold;">Привет из Шаблон в TS!</h3>
-      <p>Собрано с {{COMPILER_VER}}</p>
+      <h3 style="font-size: 1.17em; font-family: CG-Bold; color: var(--theme_text_color); text-shadow: var(--theme_text_shadow3);">Привет из Шаблон в TS!</h3>
+      <p style="color: var(--theme_text_color); text-shadow: var(--theme_text_shadow3);">Собрано с {{COMPILER_VER}}</p>
     </div>
   `;
 

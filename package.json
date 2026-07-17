@@ -1,7 +1,7 @@
 {
-  "name": "tapok",
+  "name": "template",
   "version": "1.0.0",
-  "description": "tapok",
-  "author": "VentraKat",
+  "description": "Пример приложения",
+  "author": "Template",
   "category": "Development"
 }

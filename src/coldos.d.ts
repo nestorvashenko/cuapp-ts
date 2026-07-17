@@ -1,9 +1,6 @@
-// Декларации глобальных переменных и функций ColdOS
-
 declare const ui_themeicons: string;
 declare const os_theme: 'dark' | 'light';
 
-// Функции системы
 declare function clicksound(): void;
 declare function Window_focus(id_app: string): void;
 declare function Window_add(
@@ -33,7 +30,6 @@ declare function popup(
   s2: string
 ): void;
 
-// Глобальный объект Window
 declare global {
   interface Window {
     [key: string]: any;
